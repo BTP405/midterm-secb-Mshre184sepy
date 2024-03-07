@@ -36,6 +36,9 @@ class Project:
         self.description = description
         self.start_date = start_date
         self.end_date = end_date
+        self.project_id = project_id
+        self.employees = []
+
         pass
 
     def assign_employee(self, employee):
@@ -45,7 +48,7 @@ class Project:
         Args:
             employee (Employee): The employee to be assigned to the project.
         """
-        self.employee.append(employee)
+        self.employees.append(employee)
         pass
 
 
