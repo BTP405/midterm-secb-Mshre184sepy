@@ -51,7 +51,7 @@ class ManagementSystem:
         Args:
             emp_id (str): The ID of the employee to be removed.
         """
-        #
+        ##
         for employee in self.employees:
             if employee.emp_id == emp_id:
                 self.employees.remove(employee)
