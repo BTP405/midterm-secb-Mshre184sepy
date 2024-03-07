@@ -3,7 +3,7 @@ Module: management_system.py
 
 This module contains classes for managing employees, projects, and tasks in a fictional company.
 """
-
+from datetime import datetime
 class Task:
     """
     Class representing a task in the company.
@@ -27,4 +27,9 @@ class Task:
             status (str): The status of the task.
             project (Project): The project associated with the task.
         """
+        self.task_id = task_id
+        self.description = description
+        self.status = status
+        self.project = project
+        self.deadline = deadline
         pass
